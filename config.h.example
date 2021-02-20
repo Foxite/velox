@@ -1,0 +1,19 @@
+#ifndef __CONFIG_H__
+#define __CONFIG_H__ 1
+
+#define PUBLISH_INTERVAL_MILLIS 30000
+
+#define WIFI_SSID "Wifi network"
+#define WIFI_PASS "Wifi password"
+
+#define MQTT_BROKER "192.168.0.2"
+#define MQTT_USER "username"
+#define MQTT_PASS "password"
+#define MQTT_PORT 1883
+#define MQTT_TOPIC "domoticz/in"
+
+// A variable named "backend" must be defined and it must inherit from sensor_backend
+#include "dht_backend.h"
+dht_backend backend;
+
+#endif
